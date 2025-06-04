@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+main {
+    margin-top: 60px;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.video-section {
+    background: white;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.manual-section {
+    background: #ecf0f1;
+}
+
+.manual-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.manual-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.manual-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #e74c3c;
+    text-align: center;
+}
+
+.manual-content ol {
+    counter-reset: item;
+    padding-left: 0;
+}
+
+.manual-content li {
+    display: block;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    border-radius: 5px;
+    position: relative;
+}
+
+.manual-content li::before {
+    content: counter(item);
+    counter-increment: item;
+    background: #e74c3c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -15px;
+    top: 1.5rem;
+}
+
+.manual-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    margin-left: 1rem;
+}
+
+.manual-content p {
+    margin-left: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    .manual-content {
+        padding: 1rem;
+    }
+    
+    .manual-content li {
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .manual-content h4,
+    .manual-content p {
+        margin-left: 0.5rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Warning styling for manual section */
+.manual-section::before {
+    content: "⚠️ VAROVÁNÍ: Tento manuál je určen pouze pro vzdělávací účely!";
+    display: block;
+    background: #f39c12;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.toggle-example {
+    display: inline-block;
+    margin: 0.5rem 1rem 1rem 1rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-example:hover {
+    background-color: #2980b9;
+}
+
+.example-content {
+    margin-left: 1.5rem;
+    padding: 0.8rem 1rem;
+    background-color: #d6eaf8;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    font-style: italic;
+    color: #2c3e50;
+}
