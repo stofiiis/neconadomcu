@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vývojářská příručka</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem 3rem;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+        h1, h2, h3 {
+            color: #569cd6;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        pre {
+            background-color: #252526;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            box-shadow: 0 0 10px #007acc88;
+        }
+        code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vývojářská příručka webu</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Architektura webu</h2>
+            <p>Tento web je postaven jako klasická webová aplikace s frontendem a backendem.</p>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript - zajišťuje uživatelské rozhraní a interakce.</li>
+                <li><strong>Backend:</strong> PHP skripty pro zpracování dat a komunikaci s databází MySQL.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frontend - příklady</h2>
+            <p>Ukázka jednoduché funkce pro hladání videa a manuálu na stránce:</p>
+            <pre><code>document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});</code></pre>
+        </section>
+
+        <section>
+            <h2>Backend - příklady</h2>
+            <p>Ukázka PHP kódu pro získání dat z databáze (např. příběhů):</p>
+            <pre><code><?php
+// Připojení k databázi
+$conn = new mysqli($host, $user, $pass, $dbname);
+if ($conn->connect_error) {
+    die('Connection failed: ' . $conn->connect_error);
+}
+// Výběr dat z tabulky
+$sql = "SELECT * FROM some_table ORDER BY created_at DESC";
+$result = $conn->query($sql);
+$data = [];
+if ($result && $result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $data[] = $row;
+    }
+}
+$conn->close();
+?></code></pre>
+        </section>
+
+        <section>
+            <h2>Další poznámky</h2>
+            <p>Stránka <code>dev_guide.html</code> není přístupná z navigace a slouží pouze pro interní potřeby vývojářů.</p>
+        </section>
+    </main>
+</body>
+</html>
