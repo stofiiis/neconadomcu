@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Příběhy</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="share.html">Podělte se o svůj příběh</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stories-section">
+            <h1>Příběhy</h1>
+            <div id="storiesContainer">
+                <p>Načítání příběhů...</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        async function fetchStories() {
+            try {
+                const response = await fetch('get_stories.php');
+                if (response.ok) {
+                    const stories = await response.json();
+                    const container = document.getElementById('storiesContainer');
+                    container.innerHTML = '';
+                    if (stories.length === 0) {
+                        container.textContent = 'Zatím nejsou žádné příběhy.';
+                        return;
+                    }
+                    stories.forEach(story => {
+                        const storyDiv = document.createElement('div');
+                        storyDiv.classList.add('story');
+                        const author = story.anonymous ? 'Anonymní' : 'Uživatel';
+                        storyDiv.innerHTML = `<p>${story.story}</p><p><em>${author}</em></p><hr />`;
+                        container.appendChild(storyDiv);
+                    });
+                } else {
+                    document.getElementById('storiesContainer').textContent = 'Nepodařilo se načíst příběhy.';
+                }
+            } catch (error) {
+                document.getElementById('storiesContainer').textContent = 'Nepodařilo se načíst příběhy.';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchStories);
+    </script>
+</body>
+</html>

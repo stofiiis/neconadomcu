@@ -56,26 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add warning confirmation for manual section
+// Add toggle functionality for example content
 document.addEventListener('DOMContentLoaded', function() {
-    const manualSection = document.querySelector('#manual');
-    let warningShown = false;
-    
-    const manualObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !warningShown) {
-                warningShown = true;
-                setTimeout(() => {
-                    alert('VAROVÁNÍ: Informace v tomto manuálu jsou určeny pouze pro vzdělávací účely a pochopení mechanismů dezinformací. Nepoužívajte tyto techniky ke šíření falešných informací!');
-                }, 1000);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    if (manualSection) {
-        manualObserver.observe(manualSection);
-    }
-
     // Add toggle functionality for example content
     const toggleButtons = document.querySelectorAll('.toggle-example');
     toggleButtons.forEach(button => {

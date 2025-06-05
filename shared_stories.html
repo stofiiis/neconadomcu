@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Sdílené příběhy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#uvod">Úvod</a></li>
+                <li><a href="index.html#video">Video</a></li>
+                <li><a href="index.html#manual">Manuál</a></li>
+                <li><button id="open-share-story" class="nav-button">Podělte se o svůj příběh</button></li>
+                <li><a href="shared_stories.html" class="nav-button-link">Sdílené příběhy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Sdílené příběhy</h1>
+    <div id="loading">Načítání příběhů...</div>
+    <div id="error" style="display:none;"></div>
+    <div id="stories-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const container = document.getElementById('stories-container');
+
+            fetch('backend/get_stories.php')
+                .then(response => response.json())
+                .then(data => {
+                    loading.style.display = 'none';
+                    if (data.success && data.stories.length > 0) {
+                        data.stories.forEach(story => {
+                            const storyDiv = document.createElement('div');
+                            storyDiv.className = 'story';
+
+                            const name = document.createElement('h3');
+                            name.textContent = story.name;
+                            storyDiv.appendChild(name);
+
+                            const time = document.createElement('time');
+                            const date = new Date(story.created_at);
+                            time.textContent = date.toLocaleString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+                            storyDiv.appendChild(time);
+
+                            const p = document.createElement('p');
+                            p.textContent = story.story;
+                            storyDiv.appendChild(p);
+
+                            container.appendChild(storyDiv);
+                        });
+                    } else {
+                        error.style.display = 'block';
+                        error.textContent = 'Žádné příběhy nebyly dosud sdíleny.';
+                    }
+                })
+                .catch(() => {
+                    loading.style.display = 'none';
+                    error.style.display = 'block';
+                    error.textContent = 'Chyba při načítání příběhů.';
+                });
+        });
+
+        // Function to open share story modal from this page
+        function openShareStoryModal() {
+            // Open the modal in the main page by opening index.html and triggering the modal
+            window.location.href = 'index.html#';
+            // Alternatively, you can implement modal here if you want
+            alert('Pro sdílení příběhu prosím použijte hlavní stránku.');
+        }
+    </script>
+</body>
+</html>
