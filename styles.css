@@ -51,7 +51,7 @@ section {
 }
 
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #951B81 0%, #2BABE3 100%);
     color: white;
     text-align: center;
     padding: 6rem 2rem;
@@ -339,44 +339,80 @@ html {
     color: #2c3e50;
 }
 .intro-section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 4rem 2rem;
+    background: linear-gradient(90deg, #951B81 0%, #2BABE3 100%);
     color: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
 }
 .intro-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 .intro-section .subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
     font-weight: 300;
+    position: relative;
+    z-index: 2;
 }
 .intro-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
     opacity: 0.95;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
 }
 .feature-card {
-    background: rgba(255,255,255,0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.15);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 .feature-card h3 {
     font-size: 1.2rem;
@@ -389,11 +425,83 @@ html {
     opacity: 0.9;
 }
 .cta-text {
-    margin-top: 2rem;
-    font-size: 1.1rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    background: rgba(255,255,255,0.15);
-    padding: 1rem;
-    border-radius: 8px;
-    border-left: 4px solid #ffd700;
+    background: rgba(255,255,255,0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #ffd700;
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling for "Více informací zde" buttons */
+.more-info-btn {
+    display: inline-block;
+    margin: 1rem 1rem 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #951B81 0%, #c44569 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(149, 27, 129, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.more-info-btn:hover {
+    background: linear-gradient(135deg, #c44569 0%, #951B81 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(149, 27, 129, 0.4);
+}
+
+.more-info-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(149, 27, 129, 0.3);
+}
+
+/* Enhanced responsive design for intro section */
+@media (max-width: 768px) {
+    .intro-section {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .intro-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro-section .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .intro-section p {
+        font-size: 1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .more-info-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        margin: 0.8rem 0.8rem 0.5rem 0.8rem;
+    }
 }

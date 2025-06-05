@@ -286,11 +286,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // Function to open modal with content
+    function openModal(title, content) {
+        modalTitle.textContent = content.title;
+        modalBody.innerHTML = content.content;
+        modal.classList.add('show');
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
     // Add click event to manual items
     manualItems.forEach(item => {
+        // Click handler for the entire item
         item.addEventListener('click', function(e) {
-            // Don't open modal if clicking on the toggle button
-            if (e.target.classList.contains('toggle-example')) {
+            // Don't open modal if clicking on buttons or example content
+            if (e.target.classList.contains('toggle-example') || 
+                e.target.classList.contains('more-info-btn') ||
+                e.target.closest('.example-content')) {
                 return;
             }
             
@@ -298,13 +310,24 @@ document.addEventListener('DOMContentLoaded', function() {
             const content = detailedContent[title];
             
             if (content) {
-                modalTitle.textContent = content.title;
-                modalBody.innerHTML = content.content;
-                modal.classList.add('show');
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                openModal(title, content);
             }
         });
+
+        // Click handler for "Více informací zde" button
+        const moreInfoBtn = item.querySelector('.more-info-btn');
+        if (moreInfoBtn) {
+            moreInfoBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent triggering the item click
+                
+                const title = item.querySelector('h4').textContent;
+                const content = detailedContent[title];
+                
+                if (content) {
+                    openModal(title, content);
+                }
+            });
+        }
     });
 
     // Close modal functionality
