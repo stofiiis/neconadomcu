@@ -70,7 +70,6 @@
 
         <h3>JavaScript: Plynulé scrollování a efekty</h3>
         <pre><code class="language-javascript">
-// Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
@@ -93,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add scroll effect to header
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         if (window.scrollY > 100) {
@@ -103,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Add fade-in animation for manual items
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -118,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Observe manual list items
     const manualItems = document.querySelectorAll('.manual-content li');
     manualItems.forEach((item, index) => {
         item.style.opacity = '0';
@@ -131,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <h3>JavaScript: Toggle příkladů v manuálu</h3>
         <pre><code class="language-javascript">
-// Add toggle functionality for example content
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButtons = document.querySelectorAll('.toggle-example');
     toggleButtons.forEach(button => {
