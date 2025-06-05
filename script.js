@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const exampleContent = button.nextElementSibling;
             if (exampleContent.style.display === 'none' || exampleContent.style.display === '') {
                 exampleContent.style.display = 'block';
-                button.textContent = 'Skrýt příklad s Filipem';
+                button.textContent = 'Skrýt příklad';
             } else {
                 exampleContent.style.display = 'none';
-                button.textContent = 'Příklad s Filipem';
+                button.textContent = 'Příklad';
             }
         });
     });
