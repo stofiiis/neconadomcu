@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Jak funguje emocionální manipulace:</h4>
                 <ul>
-                    <li><strong>Strach:</strong> Vytváření pocitu ohrožení nebo nebezpečí</li>
-                    <li><strong>Hněv:</strong> Vyvolávání rozhořčení vůči určité skupině nebo situaci</li>
-                    <li><strong>Naděje:</strong> Slibování nereálných řešení složitých problémů</li>
-                    <li><strong>Nostalgie:</strong> Idealizace minulosti a kritika současnosti</li>
+                    <li><strong>Strach:</strong> vytváření pocitu ohrožení nebo nebezpečí</li>
+                    <li><strong>Hněv:</strong> vyvolávání rozhořčení vůči určité skupině nebo situaci</li>
+                    <li><strong>Naděje:</strong> slibování nereálných řešení složitých problémů</li>
+                    <li><strong>Nostalgie:</strong> idealizace minulosti a kritika současnosti</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip viděl zprávu s titulkem "NEBEZPEČÍ! Nová hrozba ohrožuje vaše děti!" Ačkoliv se jednalo o běžnou situaci, dramatické podání ho vyděsilo natolik, že zprávu okamžitě sdílel bez ověření faktů.</p>
@@ -105,14 +105,14 @@ document.addEventListener('DOMContentLoaded', function() {
             `
         },
         'Zkreslení Kontextu': {
-            title: 'Zkreslení Kontextu - Detailní rozbor',
+            title: 'Zkreslení kontextu - detailní rozbor',
             content: `
                 <h4>Techniky zkreslení kontextu:</h4>
                 <ul>
-                    <li><strong>Cherry picking:</strong> Výběr pouze těch faktů, které podporují určitý názor</li>
-                    <li><strong>Vytržení z kontextu:</strong> Použití citátů nebo dat bez původního kontextu</li>
-                    <li><strong>Falešná kauzalita:</strong> Spojování nesouvisejících událostí</li>
-                    <li><strong>Generalizace:</strong> Vytváření obecných závěrů z jednotlivých případů</li>
+                    <li><strong>Cherry picking:</strong> výběr pouze těch faktů, které podporují určitý názor</li>
+                    <li><strong>Vytržení z kontextu:</strong> použití citátů nebo dat bez původního kontextu</li>
+                    <li><strong>Falešná kauzalita:</strong> spojování nesouvisejících událostí</li>
+                    <li><strong>Generalizace:</strong> vytváření obecných závěrů z jednotlivých případů</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip sdílel graf ukazující pokles určitého ukazatele, ale nezmiňoval, že se jednalo pouze o krátkodobý výkyv v dlouhodobě rostoucím trendu. Tím vytvořil falešný dojem krize.</p>
@@ -129,10 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Typy falešných autorit:</h4>
                 <ul>
-                    <li><strong>Neexistující experti:</strong> Vymyšlené osoby s falešnými tituly</li>
-                    <li><strong>Nepříslušní experti:</strong> Skuteční odborníci mimo svůj obor</li>
-                    <li><strong>Falešné instituce:</strong> Organizace s vědecky znějícími názvy</li>
-                    <li><strong>Anonymní zdroje:</strong> "Odborníci tvrdí" bez konkrétních jmen</li>
+                    <li><strong>Neexistující experti:</strong> vymyšlené osoby s falešnými tituly</li>
+                    <li><strong>Nepříslušní experti:</strong> skuteční odborníci mimo svůj obor</li>
+                    <li><strong>Falešné instituce:</strong> organizace s vědecky znějícími názvy</li>
+                    <li><strong>Anonymní zdroje:</strong> "odborníci tvrdí" bez konkrétních jmen</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip uvěřil článku podepsanému "Dr. Janem Novákem, předním odborníkem na klimatologii". Při ověření se ukázalo, že tato osoba neexistuje a článek byl vytvořen dezinformační skupinou.</p>
@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>Techniky vizuální manipulace:</h4>
                 <ul>
                     <li><strong>Deepfakes:</strong> AI-generované falešné videá</li>
-                    <li><strong>Staré záběry:</strong> Použití archivních materiálů jako aktuálních</li>
-                    <li><strong>Změna kontextu:</strong> Použití skutečných záběrů v jiném kontextu</li>
-                    <li><strong>Digitální úpravy:</strong> Photoshop a podobné nástroje</li>
+                    <li><strong>Staré záběry:</strong> použití archivních materiálů jako aktuálních</li>
+                    <li><strong>Změna kontextu:</strong> použití skutečných záběrů v jiném kontextu</li>
+                    <li><strong>Digitální úpravy:</strong> photoshop a podobné nástroje</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip sdílel video údajně z nedávných protestů, ale jednalo se o záběry z jiné země a z jiného roku. Video bylo použito k podpoře falešného narativu o současné situaci.</p>
@@ -169,10 +169,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Typy zavádějících titulků:</h4>
                 <ul>
-                    <li><strong>Clickbait:</strong> Senzační titulky pro získání kliků</li>
-                    <li><strong>Hyperbolizace:</strong> Přehánění významu události</li>
-                    <li><strong>Vytržení z kontextu:</strong> Titulek neodpovídá obsahu</li>
-                    <li><strong>Emocionální manipulace:</strong> Využití silných emocí v titulku</li>
+                    <li><strong>Clickbait:</strong> senzační titulky pro získání kliků</li>
+                    <li><strong>Hyperbolizace:</strong> přehánění významu události</li>
+                    <li><strong>Vytržení z kontextu:</strong> titulek neodpovídá obsahu</li>
+                    <li><strong>Emocionální manipulace:</strong> využití silných emocí v titulku</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip klikl na článek s titulkem "ŠOKUJÍCÍ ODHALENÍ ZNIČÍ VLÁDU!" Obsah článku však obsahoval pouze spekulace bez důkazů a titulek byl zcela nepřiměřený skutečnému obsahu.</p>
@@ -189,10 +189,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Strategie opakování:</h4>
                 <ul>
-                    <li><strong>Koordinované kampaně:</strong> Synchronizované šíření přes více platforem</li>
-                    <li><strong>Echo chambers:</strong> Uzavřené skupiny posilující stejné názory</li>
-                    <li><strong>Astroturfing:</strong> Falešné grassroot kampaně</li>
-                    <li><strong>Virální šíření:</strong> Využití algoritmů sociálních sítí</li>
+                    <li><strong>Koordinované kampaně:</strong> synchronizované šíření přes více platforem</li>
+                    <li><strong>Echo chambers:</strong> uzavřené skupiny posilující stejné názory</li>
+                    <li><strong>Astroturfing:</strong> falešné grassroot kampaně</li>
+                    <li><strong>Virální šíření:</strong> využití algoritmů sociálních sítí</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip často viděl stejné tvrzení na Facebooku, Twitteru i v diskuzích pod články. Opakování z různých zdrojů ho přesvědčilo o pravdivosti informace, ačkoliv všechny zdroje čerpaly ze stejného nepravdivého původního příspěvku.</p>
@@ -209,10 +209,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Komponenty falešných narativů:</h4>
                 <ul>
-                    <li><strong>Konspirace:</strong> Tajné spiknutí mocných skupin</li>
-                    <li><strong>Scapegoating:</strong> Hledání viníka za složité problémy</li>
-                    <li><strong>Alternativní historie:</strong> Přepisování historických faktů</li>
-                    <li><strong>Pseudověda:</strong> Vědecky znějící, ale nepodložená tvrzení</li>
+                    <li><strong>Konspirace:</strong> tajné spiknutí mocných skupin</li>
+                    <li><strong>Scapegoating:</strong> hledání viníka za složité problémy</li>
+                    <li><strong>Alternativní historie:</strong> přepisování historických faktů</li>
+                    <li><strong>Pseudověda:</strong> vědecky znějící, ale nepodložená tvrzení</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip uvěřil komplexnímu příběhu spojujícímu několik nesouvisejících událostí do jednoho "velkého plánu". Narativ byl logicky sestavený, ale založený na falešných předpokladech a nepodložených spojeních.</p>
@@ -229,10 +229,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Techniky cílení na skupiny:</h4>
                 <ul>
-                    <li><strong>Mikrocílení:</strong> Přesné zacílení na specifické demografické skupiny</li>
-                    <li><strong>Posilování předsudků:</strong> Využití existujících stereotypů</li>
-                    <li><strong>Identitní politika:</strong> Rozdělování společnosti na "my vs. oni"</li>
-                    <li><strong>Emocionální rezonance:</strong> Obsah přizpůsobený hodnotám skupiny</li>
+                    <li><strong>Mikrocílení:</strong> přesné zacílení na specifické demografické skupiny</li>
+                    <li><strong>Posilování předsudků:</strong> využití existujících stereotypů</li>
+                    <li><strong>Identitní politika:</strong> rozdělování společnosti na "my vs. oni"</li>
+                    <li><strong>Emocionální rezonance:</strong> obsah přizpůsobený hodnotám skupiny</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip patřil do online skupiny sdílející určité politické názory. Algoritmy mu začaly zobrazovat stále extrémější obsah, který posiloval jeho přesvědčení a postupně ho radikalizoval.</p>
@@ -249,10 +249,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Typy falešných účtů:</h4>
                 <ul>
-                    <li><strong>Sockpuppets:</strong> Falešné profily ovládané lidmi</li>
-                    <li><strong>Boti:</strong> Automatizované účty řízené algoritmy</li>
-                    <li><strong>Cyborgi:</strong> Kombinace lidského a automatizovaného řízení</li>
-                    <li><strong>Trollové:</strong> Účty zaměřené na vyvolávání konfliktů</li>
+                    <li><strong>Sockpuppets:</strong> falešné profily ovládané lidmi</li>
+                    <li><strong>Boti:</strong> automatizované účty řízené algoritmy</li>
+                    <li><strong>Cyborgi:</strong> kombinace lidského a automatizovaného řízení</li>
+                    <li><strong>Trollové:</strong> účty zaměřené na vyvolávání konfliktů</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip narazil na desítky profilů sdílejících stejný obsah s drobnými obměnami. Všechny profily měly podobné charakteristiky - nové účty, málo přátel, generické fotografie. Jednalo se o koordinovanou síť falešných účtů.</p>
@@ -269,10 +269,10 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <h4>Taktiky diskreditace:</h4>
                 <ul>
-                    <li><strong>Ad hominem útoky:</strong> Útok na osobu místo na argumenty</li>
-                    <li><strong>Strawman argumenty:</strong> Zkreslení pozice oponenta</li>
-                    <li><strong>Whataboutism:</strong> Odvádění pozornosti na jiné problémy</li>
-                    <li><strong>Labeling:</strong> Nálepkování oponentů negativními termíny</li>
+                    <li><strong>Ad hominem útoky:</strong> útok na osobu místo na argumenty</li>
+                    <li><strong>Strawman argumenty:</strong> zkreslení pozice oponenta</li>
+                    <li><strong>Whataboutism:</strong> odvádění pozornosti na jiné problémy</li>
+                    <li><strong>Labeling:</strong> nálepkování oponentů negativními termíny</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip viděl, jak byli kritici určité teorie označováni jako "placení agenti" nebo "užiteční idioti" bez jakýchkoliv důkazů. Tato strategie měla za cíl diskreditovat jejich argumenty bez nutnosti se s nimi věcně vypořádat.</p>
