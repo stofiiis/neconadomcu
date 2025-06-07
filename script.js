@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Detailed content for each manual item
     const detailedContent = {
-        'Emocionální Manipulace': {
+        'Emocionální manipulace': {
             title: 'Emocionální manipulace - detailní rozbor',
             content: `
                 <h4>Možnosti emocionální manipulace:</h4>
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Zkreslení Kontextu': {
+        'Zkreslení kontextu': {
             title: 'Zkreslení kontextu - detailní rozbor',
             content: `
                 <h4>Techniky zkreslení kontextu:</h4>
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Falešné Autority': {
+        'Falešné autority': {
             title: 'Falešné autority - detailní rozbor',
             content: `
                 <h4>Typy falešných autorit:</h4>
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Manipulace s Obrázky a Videi': {
+        'Manipulace s obrázky a videi': {
             title: 'Manipulace s obrázky a videi - detailní rozbor',
             content: `
                 <h4>Techniky vizuální manipulace:</h4>
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Zavádějící Titulky': {
+        'Zavádějící titulky': {
             title: 'Zavádějící titulky - detailní rozbor',
             content: `
                 <h4>Typy zavádějících titulků:</h4>
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Opakování a Šíření': {
+        'Opakování a šíření': {
             title: 'Opakování a šíření - detailní rozbor',
             content: `
                 <h4>Strategie opakování:</h4>
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Vytváření Falešných Narativů': {
+        'Vytváření falešných narativů': {
             title: 'Vytváření falešných narativů - detailní rozbor',
             content: `
                 <h4>Komponenty falešných narativů:</h4>
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Využití Sociálních Skupin': {
+        'Využití sociálních skupin': {
             title: 'Využití sociálních skupin - detailní rozbor',
             content: `
                 <h4>Techniky cílení na skupiny:</h4>
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Vytváření Falešných Profilů a Botů': {
+        'Vytváření falešných profilů a botů': {
             title: 'Vytváření falešných profilů a botů - detailní rozbor',
             content: `
                 <h4>Typy falešných účtů:</h4>
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `
         },
-        'Ignorování nebo Zlehčování Oponentů': {
+        'Ignorování nebo zlehčování oponentů': {
             title: 'Ignorování nebo zlehčování oponentů - detailní rozbor',
             content: `
                 <h4>Taktiky diskreditace:</h4>
