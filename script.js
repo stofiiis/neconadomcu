@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Emocionální Manipulace': {
             title: 'Emocionální manipulace - detailní rozbor',
             content: `
-                <h4>Jak funguje emocionální manipulace:</h4>
+                <h4>Možnosti emocionální manipulace:</h4>
                 <ul>
                     <li><strong>Strach:</strong> vytváření pocitu ohrožení nebo nebezpečí</li>
                     <li><strong>Hněv:</strong> vyvolávání rozhořčení vůči určité skupině nebo situaci</li>
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><strong>Anonymní zdroje:</strong> "odborníci tvrdí" bez konkrétních jmen</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
-                <p>Filip uvěřil článku podepsanému "Dr. Janem Novákem, předním odborníkem na klimatologii". Při ověření se ukázalo, že tato osoba neexistuje a článek byl vytvořen dezinformační skupinou.</p>
+                <p>Filip uvěřil článku podepsanému "Dr. Janem Novákem, předním odborníkem na klimatologii". To mu dodalo jistotu o pravdivosti a zprávu šířil dál.</p>
                 <h4>Jak ověřit autoritu:</h4>
                 <ul>
                     <li>Vyhledejte jméno experta v odborných databázích</li>
@@ -150,12 +150,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>Techniky vizuální manipulace:</h4>
                 <ul>
                     <li><strong>Deepfakes:</strong> AI-generované falešné videá</li>
-                    <li><strong>Staré záběry:</strong> použití archivních materiálů jako aktuálních</li>
+                    <li><strong>Staré záběry:</strong> použití starších materiálů jako aktuálních</li>
                     <li><strong>Změna kontextu:</strong> použití skutečných záběrů v jiném kontextu</li>
                     <li><strong>Digitální úpravy:</strong> photoshop a podobné nástroje</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
-                <p>Filip sdílel video údajně z nedávných protestů, ale jednalo se o záběry z jiné země a z jiného roku. Video bylo použito k podpoře falešného narativu o současné situaci.</p>
+                <p>Filip sdílel video údajně z nedávných protestů, ale jednalo se o záběry z jiné země a z jiného roku. Video bylo použito k podpoře falešného dojmu o současné situaci.</p>
                 <h4>Jak rozpoznat manipulaci:</h4>
                 <ul>
                     <li>Použijte reverzní vyhledávání obrázků</li>
@@ -191,15 +191,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul>
                     <li><strong>Koordinované kampaně:</strong> synchronizované šíření přes více platforem</li>
                     <li><strong>Echo chambers:</strong> uzavřené skupiny posilující stejné názory</li>
-                    <li><strong>Astroturfing:</strong> falešné grassroot kampaně</li>
-                    <li><strong>Virální šíření:</strong> využití algoritmů sociálních sítí</li>
+                    <li><strong>Virální šíření:</strong> využití algoritmů sociálních sítí ve svůj prospěch</li>
                 </ul>
                 <h4>Příklad z praxe:</h4>
                 <p>Filip často viděl stejné tvrzení na Facebooku, Twitteru i v diskuzích pod články. Opakování z různých zdrojů ho přesvědčilo o pravdivosti informace, ačkoliv všechny zdroje čerpaly ze stejného nepravdivého původního příspěvku.</p>
                 <h4>Jak se bránit:</h4>
                 <ul>
                     <li>Hledejte původní zdroj informace</li>
-                    <li>Diverzifikujte své informační zdroje</li>
+                    <li>Zkuste více informačních zdrojů</li>
                     <li>Buďte skeptičtí k virálním obsahům</li>
                 </ul>
             `
