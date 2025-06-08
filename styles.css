@@ -91,7 +91,14 @@ section {
     background: #ecf0f1;
 }
 
-.manual-section h2 {
+.manual-vyber-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.manual-tvorba-section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #2c3e50;
@@ -303,8 +310,19 @@ html {
 }
 
 /* Warning styling for manual section */
-.manual-section::before {
+.manual-vyber-section::before {
     content: "⚠️ VAROVÁNÍ: Tento manuál je určen pouze pro vzdělávací účely!";
+    display: block;
+    background: #f39c12;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.manual-tvorba-section::before {
     display: block;
     background: #f39c12;
     color: white;
